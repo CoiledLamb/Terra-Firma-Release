@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="BaseStone" Load="Merge">
+    <tag Name="Cleo_TerraFirma_IsAnyStone" />
+    <part Name="Cleo_TerraFirma_GeomancyStonePart" />
+  </object>
+  <object Name="Gemstone" Load="Merge">
+    <tag Name="Cleo_TerraFirma_IsAnyStone" />
+    <tag Name="Cleo_TerraFirma_IsGemstone" />
+    <part Name="Cleo_TerraFirma_GeomancyStonePart" />
+    <part Name="ThrownWeapon" Damage="1d2" />
+  </object>
+  <object Name="BaseNugget" Load="Merge">
+    <tag Name="Cleo_TerraFirma_IsGeomancyStone" />
+    <part Name="Cleo_TerraFirma_GeomancyStonePart" />
+  </object>
+  <object Name="Random Figurine" Load="Merge">
+    <tag Name="Cleo_TerraFirma_IsGeomancyStone" />
+    <part Name="Cleo_TerraFirma_GeomancyStonePart" />
+  </object>
+  <object Name="BaseSedimentaryRock" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" />
+  </object>
+  <object Name="BaseMetamorphicRock" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" />
+  </object>
+  <object Name="Basalt" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="basalt" />
+  </object>
+  <object Name="Granite" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="granite" />
+  </object>
+  <object Name="Marble" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="marble" StatName="Toughness" StatShift="4" />
+  </object>
+  <object Name="Mudroot" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" MaterialDisplayName="clay" />
+  </object>
+  <object Name="AgateWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="gem-studded" StatName="Ego" StatShift="1" />
+  </object>
+  <object Name="TopazWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="gem-studded" StatName="Ego" StatShift="2" />
+  </object>
+  <object Name="JasperWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="gem-studded" StatName="Ego" StatShift="3" />
+  </object>
+  <object Name="AmethystWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="gem-studded" StatName="Ego" StatShift="4" />
+  </object>
+  <object Name="SapphireWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="gem-studded" StatName="Ego" StatShift="5" />
+  </object>
+  <object Name="EmeraldWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="gem-studded" StatName="Ego" StatShift="6" />
+  </object>
+  <object Name="PeridotWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" Natural="true" MaterialDisplayName="gem-studded" StatName="Ego" StatShift="7" />
+  </object>
+  <object Name="BaseWallMetal" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="metal" StatName="AV" StatShift="2" />
+  </object>
+  <object Name="BaseWallWood" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="wood" />
+  </object>
+  <object Name="WoodWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="wood" />
+  </object>
+  <object Name="BasePlantWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="floral" MutationName="Regeneration" MutationLevel="5" />
+  </object>
+  <object Name="BaseMushroomWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="fungus" MutationName="Regeneration" MutationLevel="5" />
+  </object>
+  <object Name="BaseWallFlower" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="floral" MutationName="Regeneration" MutationLevel="5" />
+  </object>
+  <object Name="CyberWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="tetraxenonoglass" />
+  </object>
+  <object Name="GlassWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="glass" />
+  </object>
+  <object Name="BaseWallBrick" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" MaterialDisplayName="brick" />
+  </object>
+  <object Name="BaseWallCircuit" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="metal" MaterialDisplayName="machine" />
+  </object>
+  <object Name="BaseWallTubing" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="metal" MaterialDisplayName="machine" />
+  </object>
+  <object Name="BaseWallBone" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" MaterialDisplayName="bone" />
+  </object>
+  <object Name="Fulcrete" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" MaterialDisplayName="fulcrete" />
+  </object>
+  <object Name="Foamcrete" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" MaterialDisplayName="foamcrete" />
+  </object>
+  <object Name="Concrete" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" MaterialDisplayName="concrete" />
+  </object>
+  <object Name="PigskinWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="leather" />
+  </object>
+  <object Name="BurntWood" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="burnt wood" />
+  </object>
+  <object Name="CanvasWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="canvas" />
+  </object>
+  <object Name="BrinestalkStakes" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="brinestalk" />
+  </object>
+  <object Name="WoodFence" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="wood" />
+  </object>
+  <object Name="IronFence" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="metal" />
+  </object>
+  <object Name="BrinestalkFence" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="other" MaterialDisplayName="brinestalk" />
+  </object>
+  <object Name="ColumbariumWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" />
+  </object>
+  <object Name="CryptWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" />
+  </object>
+  <object Name="BaseSultanWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" />
+  </object>
+  <object Name="BaseMuralWall" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneshaperWallProperties" MaterialType="stone" />
+  </object>
+  <object Name="GolemInteriorWall" Load="Merge">
+    <tag Name="Cleo_TerraFirma_NoStoneshape" />
+  </object>
+  <object Name="MechInteriorWall" Load="Merge">
+    <tag Name="Cleo_TerraFirma_NoStoneshape" />
+  </object>
+  <object Name="BaseNephilimWall" Load="Merge">
+    <tag Name="Cleo_TerraFirma_NoStoneshape" />
+  </object>
+  <object Name="ChavvahTrunk" Load="Merge">
+    <tag Name="Cleo_TerraFirma_NoStoneshape" />
+  </object>
+  <object Name="BaseWallMainframe" Load="Merge">
+    <tag Name="Cleo_TerraFirma_NoStoneshape" />
+  </object>
+  <object Name="Baboon" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneScavenger" />
+    <inventoryobject Blueprint="Small Stone" Number="1-2" />
+  </object>
+  <object Name="Hulking Baboon" Load="Merge">
+    <inventoryobject Blueprint="Small Stone" Number="2-3" />
+  </object>
+  <object Name="Shrewd Baboon" Load="Merge">
+    <inventoryobject Blueprint="Small Stone" Number="2-3" />
+  </object>
+  <object Name="Wall" Load="Merge">
+    <part Name="Cleo_TerraFirma_Etchable" />
+  </object>
+  <object Name="Statue" Load="Merge">
+    <part Name="Cleo_TerraFirma_Etchable" />
+  </object>
+  <object Name="Random Statue" Load="Merge">
+    <part Name="Cleo_TerraFirma_Etchable" />
+  </object>
+  <object Name="Shale" Load="Merge">
+    <part Name="Cleo_TerraFirma_ShaleMoss" StartRipeChance="1:20" />
+  </object>
+  <object Name="BaseStone" Load="Merge">
+    <part Name="Cleo_TerraFirma_StoneThrowSignal" />
+  </object>
+  <object Name="Rubble" Load="Merge">
+    <tag Name="Cleo_TerraFirma_IsRubbleCover" />
+  </object>
+  <object Name="Glowsphere" Load="Merge">
+    <part Name="Cleo_TerraFirma_GlowsphereBreak" ShardBlueprint="Cleo_TerraFirma_GlowstoneShard" BreakYield="2-3" ThrowYield="1-3" GlowDuration="30-60" />
+    <part Name="ThrownWeapon" Damage="1d4" />
+  </object>
+  <object Name="Chalkboard" Load="Merge">
+    <part Name="Cleo_TerraFirma_ChalkboardWritable" />
+  </object>
+  <object Name="Torchpost" Load="Merge">
+    <tag Name="Cleo_TerraFirma_ColdForm" Value="Unlit Torchpost" />
+  </object>
+  <object Name="Torch" Load="Merge">
+    <tag Name="Cleo_TerraFirma_ColdForm" Value="" />
+  </object>
+  <object Name="Wall" Load="Merge">
+    <part Name="Cleo_TerraFirma_Carvable" />
+  </object>
+  <object Name="Lathe" Load="Merge">
+    <part Name="Cleo_TerraFirma_LatheCarving" />
+  </object>
+  <object Name="Copper Nugget" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Copper Figurine" />
+  </object>
+  <object Name="Silver Nugget" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Silver Figurine" />
+  </object>
+  <object Name="Gold Nugget" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Gold Figurine" />
+  </object>
+  <object Name="Rough Agate" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Agate Figurine" />
+  </object>
+  <object Name="Polished Agate" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Agate Figurine" />
+  </object>
+  <object Name="Rough Topaz" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Topaz Figurine" />
+  </object>
+  <object Name="Polished Topaz" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Topaz Figurine" />
+  </object>
+  <object Name="Rough Jasper" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Jasper Figurine" />
+  </object>
+  <object Name="Polished Jasper" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Jasper Figurine" />
+  </object>
+  <object Name="Rough Amethyst" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Amethyst Figurine" />
+  </object>
+  <object Name="Polished Amethyst" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Amethyst Figurine" />
+  </object>
+  <object Name="Rough Sapphire" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Sapphire Figurine" />
+  </object>
+  <object Name="Polished Sapphire" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Sapphire Figurine" />
+  </object>
+  <object Name="Rough Emerald" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Emerald Figurine" />
+  </object>
+  <object Name="Polished Emerald" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Emerald Figurine" />
+  </object>
+  <object Name="Rough Peridot" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Peridot Figurine" />
+  </object>
+  <object Name="Polished Peridot" Load="Merge">
+    <tag Name="Cleo_TerraFirma_LatheFigurine" Value="Random Peridot Figurine" />
+  </object>
+</objects>

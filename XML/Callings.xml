@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<subtypes>
+  <class ID="Callings" ChargenTitle="Choose Calling" SingularTitle="calling">
+    <subtype Name="Stonecarver" Gear="Cleo_StartingGear_Stonecarver" Tile="stonecarver.png" DetailColor="K">
+      <stat Name="Willpower" Bonus="2" />
+      <skills>
+        <skill Name="Cudgel" />
+        <skill Name="ShortBlades" />
+        <skill Name="Customs" />
+        <skill Name="Discipline" />
+        <skill Name="Survival_DesertCanyonSurvival" />
+      </skills>
+    </subtype>
+  </class>
+  <class ID="Callings">
+    <subtype Name="Stonecarver">
+      <reputations>
+        <reputation With="Cleo_TerraFirma_Quarriers" Value="200" />
+      </reputations>
+    </subtype>
+  </class>
+</subtypes>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+  <conversation ID="Cleo_TerraFirma_ConversationStoneshaperStatue">
+    <start ID="IsVain" IfSpeakerHaveProperty="Cleo_TerraFirma_IsVain">
+      <text>
+				{{emote|*vainglorious preening*}}
+			</text>
+      <choice GotoID="End">Looking good, friend.</choice>
+    </start>
+    <start ID="IsNotVain" IfNotSpeakerHaveProperty="Cleo_TerraFirma_IsVain">
+      <text>
+				{{emote|*menacing rumbling*}}~
+				{{emote|*protective rumbling*}}~
+				{{emote|*powerful rumbling*}}~
+				{{emote|*ominous rumbling*}}
+			</text>
+      <choice GotoID="End">Thank you for your protection, friend.</choice>
+    </start>
+  </conversation>
+  <conversation ID="Cleo_TerraFirma_SnapjawMiner">
+    <node ID="Start">
+      <text>
+				heheheh. mine rock. rock mine.~
+				bite wall? grehehe.
+			</text>
+      <choice GotoID="End">...live and drink.</choice>
+    </node>
+  </conversation>
+  <conversation ID="Cleo_TerraFirma_Outrider">
+    <node ID="Start">
+      <text>
+				Mind the cairns, wayfarer, lest you knock one over.~
+				Seen a few baboons today. Not one made it further than a stone's throw.
+			</text>
+      <choice GotoID="End">Rust and earth.</choice>
+    </node>
+  </conversation>
+  <conversation ID="Cleo_TerraFirma_Mason">
+    <node ID="Start">
+      <text>
+				Stones talk sometimes. Just gotta listen real close, and you can hear 'em singing.~
+				Need something sculpted? Man, boar, fish?~
+				I sometimes wonder if the stones feel like we do. Carving must hurt then, eh?~
+				Don't know the name of the rocks around here, but they carve just the same.
+			</text>
+      <choice GotoID="End">Rust and earth.</choice>
+    </node>
+  </conversation>
+  <conversation ID="Cleo_TerraFirma_Hewer">
+    <node ID="Start">
+      <text>
+				Smashed through a wall last week, soaked my clothes. Damn aquifers.~
+				Overseer said we needed to square away more rock, but my back's been killing me... got any witchwood?
+			</text>
+      <choice GotoID="End">Rust and earth.</choice>
+    </node>
+  </conversation>
+  <conversation ID="Cleo_TerraFirma_Overseer">
+    <node ID="Start">
+      <text>
+				Ain't easy work overseein' a warren like this, wayfarer.~
+				Make sure not to find yourself on the wrong side of the outrider, and you'll do fine.
+			</text>
+      <choice GotoID="End">Rust and earth.</choice>
+    </node>
+  </conversation>
+  <conversation ID="Cleo_TerraFirma_VineMerchant">
+    <node ID="Start">
+      <text>
+				Come, wayfarer. My stonesup tools are yours to work.~
+				Helmets, lights, picks... make certain of the stock you buy now, for a missing piece could prove fatal.~
+				The rocks here are loose. With my wares, you could be rid of them altogether.~
+				Ah, to feel the sunlight on your skin, wayfarer. Tell me, is it sweeter than the taste of fresh water?
+			</text>
+      <choice GotoID="End">Rust and earth.</choice>
+    </node>
+  </conversation>
+</conversations>

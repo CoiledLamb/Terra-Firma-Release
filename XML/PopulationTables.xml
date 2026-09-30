@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<populations>
+  <population Name="Cleo_StartingGear_Stonecarver">
+    <group Name="Gear" Style="pickeach">
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="EmptyWaterskin" Number="2" />
+      <object Blueprint="Cleo_TerraFirma_Blunted Chisel" Number="1" />
+      <object Blueprint="Cleo_TerraFirma_Splintered Mallet" Number="1" />
+      <object Blueprint="Ash-Stained Robes" Number="1" />
+      <object Blueprint="Sandals" Number="1" />
+      <object Blueprint="Vinewood Sap Mask" Number="1" />
+      <object Blueprint="Bubble Level" Number="1" />
+      <object Blueprint="Random Copper Figurine" Number="1" />
+      <table Name="Cleo_Stonecarver_Maquette" />
+      <object Blueprint="Torch" Number="9-15" />
+      <object Blueprint="Witchwood Bark" Number="2-4" />
+      <object Blueprint="Boar Jerky" Number="1-2" />
+      <object Blueprint="Salthopper Chip" Number="2-4" />
+    </group>
+  </population>
+  <population Name="Cleo_Stonecarver_Maquette">
+    <group Name="Maquette" Style="pickone">
+      <object Weight="50" Blueprint="Cleo_TerraFirma_Random Stone Figurine" Number="1-2" />
+      <object Weight="35" Blueprint="Random Copper Figurine" Number="1-2" />
+      <object Weight="15" Blueprint="Random Silver Figurine" Number="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_AnimateFigurineIdentity">
+    <group Name="Identity" Style="pickone">
+      <object Blueprint="Cleo_TerraFirma_Random Stone Figurine" Weight="1" />
+      <table Name="Figurines 1" Weight="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_Cobblefur Items">
+    <group Name="Items" Style="pickone" Weight="1">
+      <object Blueprint="Cleo_TerraFirma_Cobblefur Bracer" Number="1" Weight="20" />
+      <object Blueprint="Cleo_TerraFirma_Cobblefur Gloves" Number="1" Weight="20" />
+      <object Blueprint="Cleo_TerraFirma_Cobblefur Cloak" Number="1" Weight="20" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_Stonecarver Pack">
+    <group Name="Creatures" Style="pickeach">
+      <object Chance="100" Number="1-2" Blueprint="Cleo_TerraFirma_Hewer" />
+      <object Chance="75" Number="1-2" Blueprint="Cleo_TerraFirma_Outrider" />
+      <object Chance="60" Number="1" Blueprint="Cleo_TerraFirma_Mason" />
+      <object Chance="35" Number="1" Blueprint="Cleo_TerraFirma_Mole Hewer" />
+      <object Chance="30" Number="1" Blueprint="Cleo_TerraFirma_Mole Outrider" />
+      <object Chance="25" Number="1" Blueprint="Cleo_TerraFirma_Mole Mason" />
+      <object Chance="15" Number="1" Blueprint="Cleo_TerraFirma_Rockhound" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenOccupancy">
+    <group Name="Roll" Style="pickone">
+      <object Weight="55" Blueprint="in use" />
+      <object Weight="25" Blueprint="abandoned" />
+      <object Weight="20" Blueprint="reclaimed" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenAquifers">
+    <group Name="Roll" Style="pickone">
+      <object Weight="80" Blueprint="dry" />
+      <object Weight="20" Blueprint="aquifer" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenStage">
+    <group Name="Roll" Style="pickone">
+      <object Weight="1" Blueprint="working" />
+      <object Weight="1" Blueprint="camp" />
+      <object Weight="1" Blueprint="flourishing" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_Outrider Post">
+    <group Name="Body" Style="pickone">
+      <object Weight="7" Number="1" Blueprint="Cleo_TerraFirma_Outrider" Hint="Cleo_TerraFirma_Trade:plain:100,Cleo_TerraFirma_OutsidePost:100" />
+      <object Weight="3" Number="1" Blueprint="Cleo_TerraFirma_Mole Outrider" Hint="Cleo_TerraFirma_Trade:plain:100,Cleo_TerraFirma_OutsidePost:100" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenCrew Working">
+    <group Name="Crew" Style="pickeach">
+      <table Name="Cleo_TerraFirma_Outrider Post" />
+      <table Name="Cleo_TerraFirma_Stonecarver Pack" />
+      <object Chance="15" Number="1" Blueprint="Cleo_TerraFirma_Overseer" Hint="Cleo_TerraFirma_Den:dwelling" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenCrew Camp">
+    <group Name="Crew" Style="pickeach">
+      <table Name="Cleo_TerraFirma_Outrider Post" />
+      <table Name="Cleo_TerraFirma_Stonecarver Pack" />
+      <object Chance="40" Number="1" Blueprint="Cleo_TerraFirma_Overseer" Hint="Cleo_TerraFirma_Den:dwelling" />
+      <object Number="1" Blueprint="Cleo_TerraFirma_Vine Merchant" Hint="Cleo_TerraFirma_MerchantWall" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenCrew Flourishing">
+    <group Name="Crew" Style="pickeach">
+      <table Name="Cleo_TerraFirma_Outrider Post" />
+      <table Name="Cleo_TerraFirma_Stonecarver Pack" />
+      <table Name="Cleo_TerraFirma_Stonecarver Pack" />
+      <object Chance="75" Number="1" Blueprint="Cleo_TerraFirma_Overseer" Hint="Cleo_TerraFirma_Den:dwelling" />
+      <object Number="1" Blueprint="Cleo_TerraFirma_Vine Merchant" Hint="Cleo_TerraFirma_MerchantWall" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenReclaimers">
+    <group Name="Denners" Style="pickeach">
+      <object Number="2-4" Blueprint="Cleo_TerraFirma_Snapjaw Miner" Hint="Cleo_TerraFirma_Den" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_Quarrier Kit">
+    <group Name="Equipment" Style="pickeach">
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <group Name="Light" Style="pickone">
+        <object Weight="70" Blueprint="Torch" Number="2-5" />
+        <object Weight="25" Blueprint="Cleo_TerraFirma_GlowstoneLanternLoaded" Number="1" />
+        <object Weight="5" Blueprint="Glowsphere" Number="1" />
+      </group>
+      <table Name="Shoes 1" Chance="80" />
+      <object Blueprint="Pickaxe" Chance="35" Number="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_Hewer Kit">
+    <group Name="Equipment" Style="pickeach">
+      <table Name="Cleo_TerraFirma_Quarrier Kit" />
+      <table Name="Cleo_TerraFirma_MiningGear" />
+      <table Name="Cleo_TerraFirma_Carver Knife" />
+      <table Name="Cleo_TerraFirma_Carver Hammer" />
+      <group Name="Armor" Style="pickone">
+        <table Weight="40" Name="DynamicInheritsTable:Armor:Tier{ownertier}" Chance="75" Number="1" />
+        <table Weight="60" Name="Armor {ownertier}" Chance="75" Number="1" />
+      </group>
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_Mason Kit">
+    <group Name="Equipment" Style="pickeach">
+      <table Name="Cleo_TerraFirma_Quarrier Kit" />
+      <table Name="Cleo_Stonecarver_Maquette" />
+      <table Name="Cleo_TerraFirma_MiningGear" Chance="65" />
+      <table Name="Cleo_TerraFirma_Carver Knife" />
+      <table Name="Cleo_TerraFirma_Carver Hammer" />
+      <group Name="Armor" Style="pickone">
+        <table Weight="40" Name="DynamicInheritsTable:Armor:Tier{ownertier}" Chance="75" Number="1" />
+        <table Weight="60" Name="Armor {ownertier}" Chance="75" Number="1" />
+      </group>
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_Outrider Kit">
+    <group Name="Equipment" Style="pickeach">
+      <table Name="Cleo_TerraFirma_Quarrier Kit" />
+      <group Name="PersonalEffects" Style="pickone" Chance="15">
+        <object Weight="20" Blueprint="Bracelet1" />
+        <object Weight="20" Blueprint="Bracelet2" />
+        <object Weight="20" Blueprint="Bracelet3" />
+        <object Weight="40" Blueprint="Blood-stained neck-ring" />
+      </group>
+      <group Name="Arms" Style="pickone">
+        <group Weight="40" Name="ToolPair" Style="pickeach">
+          <table Name="Cleo_TerraFirma_Carver Knife" />
+          <table Name="Cleo_TerraFirma_Carver Hammer" />
+        </group>
+        <group Weight="20" Name="ToolPairBuckler" Style="pickeach">
+          <table Name="Cleo_TerraFirma_Carver Knife" />
+          <table Name="Cleo_TerraFirma_Carver Hammer" />
+          <object Blueprint="Steel Buckler" Number="1" />
+        </group>
+        <group Weight="20" Name="DaggerShield" Style="pickeach">
+          <table Name="Cleo_TerraFirma_Carver Knife" />
+          <object Blueprint="Steel Shield" Number="1" />
+        </group>
+        <group Weight="20" Name="HammerShield" Style="pickeach">
+          <table Name="Cleo_TerraFirma_Carver Hammer" />
+          <object Blueprint="Steel Shield" Number="1" />
+        </group>
+      </group>
+      <group Name="Pelt" Style="pickone">
+        <object Weight="60" Blueprint="Cleo_TerraFirma_Cobblefur Bracer" Number="1" />
+        <object Weight="20" Blueprint="Cleo_TerraFirma_Cobblefur Gloves" Number="1" />
+        <object Weight="20" Blueprint="Cleo_TerraFirma_Cobblefur Cloak" Number="1" />
+      </group>
+      <group Name="Chest" Style="pickone">
+        <object Weight="25" Blueprint="Cleo_TerraFirma_FlintSpikePauldrons" Number="1" />
+        <object Weight="25" Blueprint="Cleo_TerraFirma_MudskinGirdle" Number="1" />
+        <object Weight="12" Blueprint="Bark Armor" Number="1" />
+        <object Weight="12" Blueprint="Studded Leather Armor" Number="1" />
+        <object Weight="6" Blueprint="Ring Mail" Number="1" />
+        <object Weight="6" Blueprint="Chain Mail" Number="1" />
+        <object Weight="8" Blueprint="Furs" Number="1" />
+        <object Weight="8" Blueprint="Leather Armor" Number="1" />
+        <group Weight="10" Name="Workwear" Style="pickone">
+          <object Weight="25" Blueprint="Sooty Smock" Number="1" />
+          <object Weight="25" Blueprint="Ash-Stained Robes" Number="1" />
+          <object Weight="25" Blueprint="Cloth Overalls" Number="1" />
+          <object Weight="25" Blueprint="Leather Apron" Number="1" />
+        </group>
+      </group>
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_Carver Knife">
+    <group Name="Knife" Style="pickone">
+      <object Weight="15" Blueprint="Cleo_TerraFirma_Blunted Chisel" Number="1" />
+      <object Weight="75" Blueprint="Steel Utility Knife" Number="1" />
+      <object Weight="10" Blueprint="Dagger3" Number="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_Carver Hammer">
+    <group Name="Hammer" Style="pickone">
+      <object Weight="15" Blueprint="Cleo_TerraFirma_Splintered Mallet" Number="1" />
+      <object Weight="75" Blueprint="Steel Hammer" Number="1" />
+      <object Weight="10" Blueprint="Cudgel3" Number="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_VineMerchantWares">
+    <group Name="Wares" Style="pickeach">
+      <object Blueprint="Cleo_TerraFirma_Gravel Shotgun" Number="1" Chance="15" />
+      <table Name="Tier1Wares" />
+      <table Name="Cleo_TerraFirma_MiningGear" Number="2-3" />
+      <object Blueprint="Pickaxe" Number="1-2" />
+      <object Blueprint="Cleo_TerraFirma_BoxOfChalk" Number="2" />
+      <object Blueprint="Yuckwheat Stem" Number="2-4" />
+      <object Blueprint="Starapple Preserves" Number="1-2" />
+      <object Blueprint="Boar Jerky" Number="1-3" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_MiningGear">
+    <group Name="Gear" Style="pickone">
+      <object Weight="400" Blueprint="Leather Cap" Number="1" />
+      <object Weight="400" Blueprint="Vinewood Sap Mask" Number="1" />
+      <object Weight="260" Blueprint="Goggles" Number="1" />
+      <object Weight="240" Blueprint="Witchwood Wreath" Number="1" />
+      <object Weight="200" Blueprint="Miner's Helmet" Number="1" />
+      <object Weight="200" Blueprint="Headlamp" Number="1" />
+      <object Weight="160" Blueprint="Gas Mask" Number="1" />
+      <object Weight="140" Blueprint="Knollworm Skull" Number="1" />
+      <object Weight="315" Blueprint="Leather Gloves" Number="1" />
+      <object Weight="280" Blueprint="Boar-skin gloves" Number="1" />
+      <object Weight="105" Blueprint="Cleo_TerraFirma_Cobblefur Gloves" Number="1" />
+      <object Weight="300" Blueprint="Nylon Bodypack" Number="1" />
+      <object Weight="100" Blueprint="Cleo_TerraFirma_SeismicShufflers" Number="1" />
+      <object Weight="100" Blueprint="Cleo_TerraFirma_GaslightGauntlets" Number="1" />
+    </group>
+  </population>
+  <population Name="BaboonParty" Load="Merge">
+    <group Name="Baboons" Style="pickeach">
+      <object Chance="33" Number="0-1" Blueprint="Cleo_TerraFirma_Cobble Baboon" />
+    </group>
+  </population>
+  <population Name="BigBaboonParty" Load="Merge">
+    <group Name="Baboons" Style="pickeach">
+      <object Chance="90" Number="1-2" Blueprint="Cleo_TerraFirma_Cobble Baboon" />
+    </group>
+  </population>
+  <population Name="DesertCanyonZoneGlobals-Reachable" Load="Merge">
+    <group Chance="20" Name="Cleo_TerraFirma_QuarrierParty">
+      <table Name="Cleo_TerraFirma_Stonecarver Pack" />
+    </group>
+  </population>
+  <population Name="Utility 2" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="10" Number="1" Blueprint="Cleo_TerraFirma_GlowstoneLantern" />
+    </group>
+  </population>
+  <population Name="Artifact 0R" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="5" Number="1" Blueprint="Cleo_TerraFirma_Seismophone" />
+      <object Weight="20" Number="1" Blueprint="Cleo_TerraFirma_MoleCricket" />
+    </group>
+  </population>
+  <population Name="Artifact 1R" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="5" Number="1" Blueprint="Cleo_TerraFirma_Seismophone" />
+      <object Weight="20" Number="1" Blueprint="Cleo_TerraFirma_MoleCricket" />
+    </group>
+  </population>
+  <population Name="Artifact 2R" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="5" Number="1" Blueprint="Cleo_TerraFirma_Seismophone" />
+      <object Weight="10" Number="1" Blueprint="Cleo_TerraFirma_MoleCricket" />
+    </group>
+  </population>
+  <population Name="Artifact 3R" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="10" Number="1" Blueprint="Cleo_TerraFirma_Seismophone" />
+      <object Weight="5" Number="1" Blueprint="Cleo_TerraFirma_MoleCricket" />
+      <object Weight="5" Number="1" Blueprint="Cleo_TerraFirma_SeismicShufflers" />
+    </group>
+  </population>
+  <population Name="Artifact 4R" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="20" Number="1" Blueprint="Cleo_TerraFirma_Seismophone" />
+      <object Weight="1" Number="1" Blueprint="Cleo_TerraFirma_MoleCricket" />
+    </group>
+  </population>
+  <population Name="Trinkets 1" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="35" Number="1" Blueprint="Cleo_TerraFirma_BoxOfChalk" />
+    </group>
+  </population>
+  <population Name="Trinkets 2" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="35" Number="1" Blueprint="Cleo_TerraFirma_BoxOfChalk" />
+    </group>
+  </population>
+  <population Name="Trinkets 3" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="35" Number="1" Blueprint="Cleo_TerraFirma_BoxOfChalk" />
+    </group>
+  </population>
+  <population Name="Trinkets 4" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="35" Number="1" Blueprint="Cleo_TerraFirma_BoxOfChalk" />
+    </group>
+  </population>
+  <population Name="Trinkets 5" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="35" Number="1" Blueprint="Cleo_TerraFirma_BoxOfChalk" />
+    </group>
+  </population>
+  <population Name="Trinkets 6" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="35" Number="1" Blueprint="Cleo_TerraFirma_BoxOfChalk" />
+    </group>
+  </population>
+  <population Name="Trinkets 7" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="35" Number="1" Blueprint="Cleo_TerraFirma_BoxOfChalk" />
+    </group>
+  </population>
+  <population Name="Trinkets 8" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="35" Number="1" Blueprint="Cleo_TerraFirma_BoxOfChalk" />
+    </group>
+  </population>
+  <population Name="Armor 2C" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="10" Number="1" Blueprint="Cleo_TerraFirma_Cobblefur Bracer" />
+      <object Weight="10" Number="1" Blueprint="Cleo_TerraFirma_Cobblefur Gloves" />
+      <object Weight="10" Number="1" Blueprint="Cleo_TerraFirma_Cobblefur Cloak" />
+    </group>
+  </population>
+  <population Name="Armor 3R" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="10" Number="1" Blueprint="Cleo_TerraFirma_SeismicShufflers" />
+    </group>
+  </population>
+  <population Name="Armor 2R" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="20" Number="1" Blueprint="Cleo_TerraFirma_MudskinGirdle" />
+      <object Weight="20" Number="1" Blueprint="Cleo_TerraFirma_FlintSpikePauldrons" />
+    </group>
+  </population>
+  <population Name="Armor 4R" Load="Merge">
+    <group Name="Items" Style="pickone">
+      <object Weight="10" Number="1" Blueprint="Cleo_TerraFirma_GaslightGauntlets" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress Socket">
+    <group Name="Rolls" Style="pickone">
+      <object Weight="55" Blueprint="*None" />
+      <object Weight="18" Blueprint="Cleo_TerraFirma_QuarryStones1" />
+      <object Weight="8" Blueprint="Torch" Hint="Cleo_TerraFirma_Face" />
+      <object Weight="5" Blueprint="Pickaxe" Hint="Cleo_TerraFirma_Face" />
+      <object Weight="5" Blueprint="Garbage" />
+      <object Weight="2" Blueprint="Cleo_TerraFirma_Quarry Chest" />
+      <object Weight="4" Blueprint="Floor Cushion" />
+      <object Weight="3" Blueprint="Bedroll" />
+      <object Weight="2" Blueprint="Wine Pitcher" />
+      <object Weight="4" Blueprint="Cleo_TerraFirma_Stone Basket" />
+      <object Weight="2" Blueprint="Vase" />
+      <object Weight="2" Blueprint="Jug" />
+      <object Weight="1" Blueprint="Copper Nugget" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress GalleryBay">
+    <group Name="Rolls" Style="pickone">
+      <object Weight="40" Blueprint="*None" />
+      <object Weight="12" Blueprint="Random Stone Statue" />
+      <object Weight="7" Blueprint="LargeBoulder" />
+      <object Weight="7" Blueprint="Cleo_TerraFirma_QuarryStones2" />
+      <object Weight="7" Blueprint="Hammered Dulcimer" />
+      <object Weight="8" Blueprint="Bench" />
+      <object Weight="6" Blueprint="Floor Cushion" />
+      <object Weight="6" Blueprint="Wine Pitcher" />
+      <object Weight="5" Blueprint="Cider Vase" />
+      <object Weight="4" Blueprint="Kline" />
+      <object Weight="4" Blueprint="Cleo_TerraFirma_Quarry Chest" />
+      <object Weight="3" Blueprint="Torch" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress GalleryPillar">
+    <group Name="Rolls" Style="pickone">
+      <object Weight="48" Blueprint="*None" />
+      <object Weight="14" Blueprint="Random Stone Statue" />
+      <object Weight="8" Blueprint="Chalkboard" />
+      <object Weight="7" Blueprint="Torch" />
+      <object Weight="8" Blueprint="Bench" />
+      <object Weight="7" Blueprint="Floor Cushion" />
+      <object Weight="6" Blueprint="Cleo_TerraFirma_QuarryStones1" />
+      <object Weight="5" Blueprint="Cider Vase" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress GalleryFloor">
+    <group Name="Rolls" Style="pickone">
+      <object Weight="34" Blueprint="*None" />
+      <object Weight="18" Blueprint="LargeBoulder" Hint="Center" />
+      <object Weight="13" Blueprint="Random Stone Statue" Hint="Center" />
+      <object Weight="10" Blueprint="Village Monument" Hint="Center" />
+      <object Weight="9" Blueprint="Cleo_TerraFirma_FireDish" Hint="Center" />
+      <object Weight="7" Blueprint="Hammered Dulcimer" Hint="Center" />
+      <object Weight="5" Blueprint="Chalkboard" Hint="Center" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress Natural">
+    <group Name="Rolls" Style="pickone">
+      <object Weight="55" Blueprint="*None" />
+      <object Weight="10" Blueprint="Small Stone" />
+      <object Weight="15" Blueprint="SmallBoulder" />
+      <object Weight="20" Blueprint="Cleo_TerraFirma_Rock_Pebbles" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress PlainTrace">
+    <group Name="Rolls" Style="pickone">
+      <object Weight="74" Blueprint="*None" />
+      <object Weight="10" Blueprint="Torch" Hint="Cleo_TerraFirma_Face" />
+      <object Weight="7" Blueprint="Garbage" />
+      <object Weight="5" Blueprint="Pickaxe" Hint="Cleo_TerraFirma_Face" />
+      <object Weight="3" Blueprint="Floor Cushion" />
+      <object Weight="2" Blueprint="Cider Vase" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress HallTable">
+    <group Name="Rolls" Style="pickone">
+      <object Weight="74" Blueprint="*None" />
+      <object Weight="10" Blueprint="Torch" Hint="Cleo_TerraFirma_Face" />
+      <object Weight="7" Blueprint="Garbage" />
+      <object Weight="5" Blueprint="Pickaxe" Hint="Cleo_TerraFirma_Face" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress Plaza">
+    <group Name="Rolls" Style="pickone">
+      <object Weight="46" Blueprint="*None" />
+      <object Weight="10" Blueprint="Bench" />
+      <object Weight="8" Blueprint="Floor Cushion" />
+      <object Weight="7" Blueprint="Cider Vase" />
+      <object Weight="6" Blueprint="Wine Pitcher" />
+      <object Weight="6" Blueprint="Cleo_TerraFirma_QuarryStones1" />
+      <object Weight="5" Blueprint="Torch" />
+      <object Weight="4" Blueprint="Kline" />
+      <object Weight="4" Blueprint="Hammered Dulcimer" />
+      <object Weight="2" Blueprint="Random Stone Statue" />
+      <object Weight="2" Blueprint="Cleo_TerraFirma_FireDish" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress WorkScatter">
+    <group Name="Rolls" Style="pickone">
+      <object Weight="30" Blueprint="*None" />
+      <object Weight="15" Blueprint="Small Stone" />
+      <object Weight="12" Blueprint="SmallBoulder" />
+      <object Weight="13" Blueprint="Cleo_TerraFirma_QuarryStones1" />
+      <object Weight="8" Blueprint="Torch" />
+      <object Weight="8" Blueprint="Pickaxe" />
+      <object Weight="6" Blueprint="Cleo_TerraFirma_Stone Basket" />
+      <object Weight="4" Blueprint="Cleo_TerraFirma_QuarryStones2" />
+      <object Weight="2" Blueprint="Headlamp" />
+      <object Weight="2" Blueprint="Miner's Helmet" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Light">
+    <group Name="Pool" Style="pickone">
+      <object Blueprint="Torch" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Storage">
+    <group Name="Pool" Style="pickone">
+      <object Blueprint="Cleo_TerraFirma_Quarry Chest" />
+      <object Blueprint="Woven Basket" />
+      <object Blueprint="Cleo_TerraFirma_Food Basket" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Seating">
+    <group Name="Pool" Style="pickone">
+      <object Weight="30" Blueprint="Floor Cushion" />
+      <object Weight="15" Blueprint="Canvas Folding Chair" />
+      <object Weight="10" Blueprint="Kline" />
+      <object Weight="20" Blueprint="Bench" />
+      <object Weight="25" Blueprint="Stool" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Sleep">
+    <group Name="Pool" Style="pickone">
+      <object Weight="15" Blueprint="Bed" />
+      <object Weight="55" Blueprint="Bedroll" />
+      <object Weight="30" Blueprint="Folding Cot" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Centre">
+    <group Name="Pool" Style="pickone">
+      <object Blueprint="Table" />
+      <object Blueprint="Workbench" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Liquid">
+    <group Name="Pool" Style="pickone">
+      <object Blueprint="Wine Pitcher" />
+      <object Blueprint="Wine Pitcher" />
+      <object Blueprint="Cider Vase" />
+      <object Blueprint="Vase" />
+      <object Blueprint="Jug" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Crafts">
+    <group Name="Pool" Style="pickone">
+      <object Blueprint="Workbench" />
+      <object Blueprint="Anvil" />
+      <object Blueprint="Pickaxe" />
+      <object Blueprint="Random Stone Statue" />
+      <object Blueprint="Cleo_TerraFirma_QuarryStones1" />
+      <object Blueprint="Cleo_TerraFirma_QuarryStones2" />
+      <object Blueprint="Cleo_TerraFirma_QuarryStones3" />
+      <object Blueprint="Cleo_TerraFirma_Random Stone Figurine" />
+      <object Blueprint="Cleo_TerraFirma_Stone Basket" />
+      <object Blueprint="Kiln" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Hearth">
+    <group Name="Pool" Style="pickone">
+      <object Blueprint="Oven" />
+      <object Blueprint="Campfire" />
+      <object Blueprint="Cleo_TerraFirma_FireDish" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Comfort">
+    <group Name="Pool" Style="pickone">
+      <object Blueprint="Hookah" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenPool Keepsake">
+    <group Name="Pool" Style="pickone">
+      <object Blueprint="Bracelet1" />
+      <object Blueprint="Bracelet2" />
+      <object Blueprint="Bracelet3" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_StoneBasket Contents">
+    <group Name="Contents" Style="pickeach">
+      <object Blueprint="Small Stone" Number="2-4" />
+      <object Blueprint="Cleo_TerraFirma_Rock_Pebbles" Number="0-1" />
+      <object Blueprint="Copper Nugget" Number="1" Chance="5" />
+      <object Blueprint="Cleo_TerraFirma_BoxOfChalk" Number="1" Chance="25" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_FoodBasket Contents">
+    <group Name="Contents" Style="pickeach">
+      <object Blueprint="Yuckwheat Stem" Number="1-3" Chance="80" />
+      <object Blueprint="Starapple Preserves" Number="1" Chance="45" />
+      <object Blueprint="Boar Jerky" Number="1-2" Chance="55" />
+    </group>
+  </population>
+  <population Name="StiltAnimalPen" Load="Merge">
+    <group Name="Types" Style="pickone">
+      <group Name="Pigs" Style="pickeach">
+        <object Blueprint="Cleo_TerraFirma_Farm Boar Vessel" Number="1" Chance="15" />
+      </group>
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenWiring">
+    <group Style="pickone">
+      <object Blueprint="wired" Weight="75" />
+      <object Blueprint="unwired" Weight="25" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenWireDamage">
+    <group Style="pickone">
+      <object Blueprint="intact" Weight="88" />
+      <object Blueprint="broken" Weight="12" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenMachineCount">
+    <group Name="Count" Style="pickone">
+      <object Blueprint="1" Weight="1" />
+      <object Blueprint="2" Weight="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenMachines">
+    <group Name="Machines" Style="pickone">
+      <object Blueprint="Rock Tumbler" Weight="1" />
+      <object Blueprint="Lathe" Weight="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenEtchCount">
+    <group Style="pickone">
+      <object Blueprint="2" Weight="1" />
+      <object Blueprint="3" Weight="1" />
+      <object Blueprint="4" Weight="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenDress StatueLikeness">
+    <group Style="pickone">
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueBaboon" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueBoar" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueDog" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueDragonfly" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueGlowcrow" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueChameleon" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueTortoise" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueSalamander" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueTwoHeadedBoar" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueSalthopper" Weight="1" />
+      <object Blueprint="Cleo_TerraFirma_CanyonStatueEquimax" Weight="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenVisitors">
+    <group Style="pickeach">
+      <table Name="Cleo_TerraFirma_WarrenHermits" Chance="35" />
+      <object Blueprint="Cave Spider" Number="2-3" Chance="35" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenHermits">
+    <group Style="pickone">
+      <object Blueprint="Scrap-clad Hermit" Number="1-2" Weight="1" />
+      <object Blueprint="Hide-Sheathed Hermit" Number="1-2" Weight="1" />
+      <object Blueprint="Trash Monk" Number="1-2" Weight="1" />
+    </group>
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenSparseWebs">
+    <object Blueprint="Web" Number="2-4" Chance="25" Hint="Cleo_TerraFirma_Web" />
+  </population>
+  <population Name="Cleo_TerraFirma_WarrenSpiderWebs">
+    <object Blueprint="Web" Number="2-8" Hint="Cleo_TerraFirma_SpiderWeb" />
+  </population>
+</populations>

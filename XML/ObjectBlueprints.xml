@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="Cleo_TerraFirma_Blunted Chisel" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="blunted chisel" Tile="blunted_chisel.png" DetailColor="y" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d2" />
+    <part Name="Commerce" Value="5" />
+    <part Name="Description" Short="A well-worn tool, long since dulled from precise impacts to solid rock." />
+    <part Name="Metal" />
+    <stag Name="Contemporary" />
+    <tag Name="Tier" Value="1" />
+    <tag Name="Cleo_TerraFirma_EtchTool" Value="Chisel" />
+  </object>
+  <object Name="Cleo_TerraFirma_Splintered Mallet" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="splintered mallet" Tile="Items/sw_leatherworking_hammer.bmp" DetailColor="y" ColorString="&amp;w" />
+    <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
+    <part Name="Commerce" Value="5" />
+    <part Name="Description" Short="The witchwood handle of this bronze mallet has been worn down to splinters, but its head still rings true." />
+    <tag Name="Tier" Value="0" />
+    <part Name="Physics" Weight="2" />
+    <tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_oneHanded_metal_swing" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_metal_blocked" />
+    <tag Name="Cleo_TerraFirma_EtchTool" Value="Mallet" />
+  </object>
+  <object Name="Cleo_TerraFirma_Urchin Spine" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="sharpened {{r|polyp}}" Tile="Items/sw_sharpened_polyp.bmp" ColorString="&amp;w" DetailColor="g" />
+    <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d8+1" Skill="LongBlades" />
+    <part Name="Commerce" Value="10" />
+    <part Name="Description" Short="A sharpened spine, plucked from the still writhing corpse of a burrowing urchin." />
+    <part Name="Drill" ChargeUse="0" PenetrationBonus="20" HitsRequired="4" IsBootSensitive="false" IsEMPSensitive="false" IsPowerSwitchSensitive="false" IsPowerLoadSensitive="false" IsTechScannable="false" Sound="fly_generic_dig" />
+    <part Name="Physics" Weight="3" FlameTemperature="99999" VaporTemperature="9999" />
+    <part Name="BleedingOnHit" Amount="1-2" SaveTarget="15" Stack="true" />
+    <part Name="CrumblesOnHit" Chance="20" />
+    <tag Name="Tier" Value="3" />
+    <stag Name="Contemporary" />
+  </object>
+  <object Name="Cleo_TerraFirma_Aculei" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="{{g|boring aculei}}" Tile="Creatures/natural-weapon-thorns.bmp" ColorString="&amp;Y" />
+    <part Name="Drill" ChargeUse="0" PenetrationBonus="20" HitsRequired="8" IsBootSensitive="false" IsEMPSensitive="false" IsPowerSwitchSensitive="false" IsPowerLoadSensitive="false" IsTechScannable="false" Sound="fly_generic_dig" />
+    <part Name="MeleeWeapon" BaseDamage="1d6" Skill="Axe" Stat="Strength" Slot="Body" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+  <object Name="Cleo_TerraFirma_FireDish" Inherits="Campfire">
+    <part Name="Render" Tile="firedish.png" DisplayName="carved fire dish" ColorString="&amp;w" TileColor="&amp;w" DetailColor="r" />
+    <part Name="Description" Short="A chunk of earth is lathed into a finely smoothed bowl. Twigs of dogthorn crackle faintly, their twisting forms reduced to smoke and ash." />
+    <removepart Name="AnimatedMaterialFire" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/CampfireFlames" Y="5" />
+    <part Name="Campfire" ExtinguishBlueprint="Cleo_TerraFirma_FireDishCold" />
+  </object>
+  <object Name="Cleo_TerraFirma_QuarryStones1" Inherits="Furniture">
+    <part Name="Render" Tile="quarrystones1a.png" DisplayName="stack of quarried stone" RenderString="#" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" Occluding="false" />
+    <builder Name="RandomTile" Tiles="quarrystones1a.png,quarrystones1b.png,quarrystones2a.png,quarrystones2b.png,quarrystones3a.png,quarrystones3b.png,quarrybricks1.png,quarrybricks2.png,quarrybricks3.png" />
+    <part Name="Description" Short="The earth is split and partitioned to exact specifications, then arranged into a lattice-grid to preserve an optimal amount of space." />
+    <part Name="Physics" Solid="false" Takeable="false" Weight="300" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Cleo_TerraFirma_QuarryStones2" Inherits="Cleo_TerraFirma_QuarryStones1" />
+  <object Name="Cleo_TerraFirma_QuarryStones3" Inherits="Cleo_TerraFirma_QuarryStones1" />
+  <object Name="Cleo_TerraFirma_QuarriedBlock" Inherits="Cleo_TerraFirma_QuarryStones1" />
+  <object Name="Cleo_TerraFirma_Random Stone Figurine" Inherits="Random Figurine">
+    <part Name="Render" DisplayName="{{y|stone}} {{|*creature*}} figurine" DetailColor="K" RenderString="*" ColorString="&amp;y" RenderLayer="5" />
+    <part Name="Commerce" Value="3" />
+    <part Name="RandomFigurine" Material="stone" />
+    <tag Name="Tier" Value="1" />
+  </object>
+  <object Name="Cleo_TerraFirma_FireDishCold" Inherits="Cleo_TerraFirma_FireDish">
+    <part Name="Render" DisplayName="cold fire dish" />
+    <part Name="Description" Short="A chunk of earth has been lathed into a finely smoothed bowl. Within it, charred dogthorn cradles the half-spoken echoes of idle chatter." />
+    <removepart Name="Campfire" />
+    <removepart Name="LightSource" />
+    <removepart Name="PrefabImposter" />
+  </object>
+  <object Name="Cleo_TerraFirma_Cobblefur Bracer" Inherits="BaseArmlet">
+    <part Name="Armor" AV="0" DV="0" WornOn="Arm" />
+    <part Name="Render" DisplayName="{{y|granitefur}} bracer" RenderString="]" Tile="baboonskin_bracers.png" ColorString="&amp;r" DetailColor="y" />
+    <part Name="Commerce" Value="50" />
+    <part Name="Description" Short="Grit-caked flesh was carved from a dead baboon and woven into a bracer." />
+    <part Name="Physics" Weight="1" Organic="true" />
+    <part Name="Fur" />
+    <part Name="IntPropertyChanger" AffectedProperty="ThrowRangeBonus" Amount="2" ChargeUse="0" IsEMPSensitive="false" IsBootSensitive="false" IsTechScannable="false" MustBeUnderstood="false" BehaviorDescription="Your throw range is increased by 2." />
+    <part Name="AddsRep" Faction="Baboons" Value="-100" />
+    <tag Name="EquipSound" Value="sfx_equip_armor_fur" />
+    <tag Name="Tier" Value="2" />
+  </object>
+  <object Name="Cleo_TerraFirma_Cobblefur Gloves" Inherits="BaseGlove">
+    <part Name="Armor" AV="0" DV="1" WornOn="Hands" />
+    <part Name="Render" DisplayName="{{y|granitefur}} gloves" RenderString="]" Tile="catching_gloves.png" ColorString="&amp;r" DetailColor="y" />
+    <part Name="Commerce" Value="75" />
+    <part Name="Description" Short="Grit-caked flesh was carved from a dead baboon and sewn into a pair of gloves." />
+    <part Name="Physics" Weight="5" Organic="true" />
+    <part Name="Fur" />
+    <part Name="Cleo_TerraFirma_CobblefurGloves" Chance="50" />
+    <part Name="AddsRep" Faction="Baboons" Value="-100" />
+    <tag Name="EquipSound" Value="sfx_equip_armor_fur" />
+    <tag Name="Tier" Value="2" />
+  </object>
+  <object Name="Cleo_TerraFirma_Cobblefur Cloak" Inherits="BaseCloak">
+    <part Name="Armor" AV="1" DV="0" WornOn="Back" />
+    <part Name="Render" DisplayName="{{y|granitefur}} cloak" RenderString="]" Tile="Items/sw_cloak_panther.bmp" ColorString="&amp;r" DetailColor="y" />
+    <part Name="Commerce" Value="60" />
+    <part Name="Description" Short="Grit-caked flesh was carved from a dead baboon and sewn into a cloak." />
+    <part Name="Physics" Weight="3" Organic="true" />
+    <part Name="Fur" />
+    <part Name="Cleo_TerraFirma_CobblefurCloak" Bonus="2" />
+    <part Name="AddsRep" Faction="Baboons" Value="-100" />
+    <tag Name="EquipSound" Value="sfx_equip_armor_fur" />
+    <tag Name="Tier" Value="2" />
+  </object>
+  <object Name="Cleo_TerraFirma_MossClump" Inherits="Snack">
+    <part Name="Render" DisplayName="clump of {{K|cave}} {{green|moss}}" ColorString="&amp;g" DetailColor="K" RenderString="%" Tile="Items/sw_grave_moss_clump.bmp" />
+    <part Name="Description" Short="A glistening carpet of moss holds the earth in its folds. Grit coats its tufts, promising the texture of salted pebbles." />
+    <part Name="Physics" Weight="1" Organic="true" />
+    <part Name="Commerce" Value="1" />
+    <part Name="Food" Satiation="Snack" Message="It's like eating salted grit, with a loamy aftertaste." />
+    <part Name="PreservableItem" Result="Cleo_TerraFirma_CrushedCaveMoss" Number="3" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Cleo_TerraFirma_CrushedCaveMoss" Inherits="Preservable">
+    <part Name="Render" DisplayName="crushed {{K|cave}} {{green|moss}}" RenderString="%" ColorString="&amp;g" TileColor="&amp;y" DetailColor="K" RenderLayer="5" Tile="crushedcavemoss.png" />
+    <part Name="Description" Short="A blanket of verdant moss was plucked from its swaddlehome, ground in a mortar, and interred in a glass vessel." />
+    <part Name="Commerce" Value="2" />
+    <part Name="PreparedCookingIngredient" type="Cleo_TerraFirma_caveMoss" charges="1" />
+    <tag Name="Plant" />
+    <tag Name="DynamicObjectsTable:Hills_Ingredients" />
+    <tag Name="DynamicObjectsTable:DesertCanyon_Ingredients" />
+  </object>
+  <object Name="Cleo_TerraFirma_MossPebble" Inherits="Cleo_TerraFirma_EphemeralStone">
+    <part Name="ThrownWeapon" Penetration="4" Damage="1d8" Attributes="Cudgel" />
+  </object>
+  <object Name="ProceduralCookingIngredient_Cleo_TerraFirma_caveMoss" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="Cleo_TerraFirma_caveMoss" />
+    <tag Name="Units" Value="Cleo_TerraFirma_CookingDomainCaveMoss_UnitEarthenBarrage" />
+    <tag Name="Triggers" Value="Cleo_TerraFirma_CookingDomainCaveMoss_OnThrowStone" />
+    <tag Name="Actions" Value="Cleo_TerraFirma_CookingDomainCaveMoss_Pebble_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="stone-based" />
+    <tag Name="RandomWeight" Value="10" />
+    <tag Name="RandomHighTierWeight" Value="0" />
+  </object>
+  <object Name="Cleo_TerraFirma_Cairn" Inherits="Furniture">
+    <part Name="Render" Tile="cairn1.png" DisplayName="cairn" RenderString="007" ColorString="&amp;w" TileColor="&amp;w" DetailColor="r" Occluding="false" />
+    <part Name="Description" Short="A waystone for those with eyes to the earth, this stack of rocks inhabits an unresolved superposition of endurance and fragility." />
+    <part Name="Physics" Solid="false" Takeable="false" Weight="400" />
+    <part Name="Cleo_TerraFirma_CairnTopple" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
+  </object>
+  <object Name="Cleo_TerraFirma_CairnToppled" Inherits="Cleo_TerraFirma_Cairn">
+    <part Name="Render" Tile="cairn2.png" DisplayName="toppled cairn" RenderString="007" ColorString="&amp;w" TileColor="&amp;w" DetailColor="r" Occluding="false" />
+    <part Name="Description" Short="These scattered rocks once formed a waystone; now, only traces of their former order remain." />
+    <part Name="Physics" Solid="false" Takeable="false" Weight="400" />
+    <removepart Name="Cleo_TerraFirma_CairnTopple" />
+    <part Name="Cleo_TerraFirma_CairnRestack" />
+  </object>
+  <object Name="Cleo_TerraFirma_Stone Basket" Inherits="Woven Basket">
+    <tag Name="InventoryPopulationTable" Value="Cleo_TerraFirma_StoneBasket Contents" />
+  </object>
+  <object Name="Cleo_TerraFirma_Food Basket" Inherits="Woven Basket">
+    <tag Name="InventoryPopulationTable" Value="Cleo_TerraFirma_FoodBasket Contents" />
+  </object>
+  <object Name="Cleo_TerraFirma_Yard Board" Inherits="Chalkboard">
+    <part Name="Cleo_TerraFirma_ChalkWriting" />
+    <tag Name="Cleo_TerraFirma_ArrivedLine" Value="arrived the =day= of =month=" />
+    <tag Name="Cleo_TerraFirma_DepartedLine" Value="departed the =day= of =month=" />
+    <tag Name="Cleo_TerraFirma_TallyLine" Value="=blocks= blocks raised" />
+  </object>
+  <object Name="Cleo_TerraFirma_Quarry Chest" Inherits="Chest">
+    <part Name="Inventory" />
+    <inventoryobject Blueprint="@Cleo_TerraFirma_MiningGear" Number="1-2" />
+    <inventoryobject Blueprint="Pickaxe" Chance="35" />
+    <inventoryobject Blueprint="Torch" Number="1-3" Chance="50" />
+  </object>
+  <object Name="Cleo_TerraFirma_FissureStone" Inherits="BaseThrownWeapon">
+    <part Name="Render" DisplayName="fissure stone" Tile="Items/sw_smallboulder.bmp" RenderString="*" ColorString="&amp;y" DetailColor="K" />
+    <part Name="Description" Short="A fist of quarried stone, scored to a lattice of fault lines. It is waiting for one hard landing." />
+    <part Name="Stacker" />
+    <part Name="Physics" Category="Grenades" Weight="10" />
+    <part Name="Commerce" Value="20" />
+    <part Name="Cleo_TerraFirma_FissureStonePart" Level="2" />
+    <tag Name="DetonatedSound" Value="Sounds/Throw/sfx_throwing_stone_large_impact" />
+    <tag Name="ExcludeFromTurretStock" />
+  </object>
+  <object Name="Cleo_TerraFirma_MudskinGirdle" Inherits="BaseArmor">
+    <part Name="Armor" AV="1" DV="1" WornOn="Body" />
+    <part Name="Render" DisplayName="mudskin girdle" RenderString="]" Tile="Items/sw_armor1.bmp" ColorString="&amp;w" DetailColor="r" />
+    <part Name="Commerce" Value="20" />
+    <part Name="Physics" Weight="12" Organic="true" />
+    <part Name="Description" Short="Clay is shaped to the skin in a makeshift cast. When pierced, it hardens reflexively." />
+    <part Name="Cleo_TerraFirma_MudskinGirdle" Cap="2" FlakeInterval="20" />
+    <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
+    <tag Name="Tier" Value="2" />
+  </object>
+  <object Name="Cleo_TerraFirma_FlintSpikePauldrons" Inherits="BaseArmor">
+    <part Name="Armor" AV="2" DV="-1" WornOn="Body" />
+    <part Name="Render" DisplayName="flint-spike pauldrons" RenderString="]" Tile="Items/sw_leather_armor.bmp" ColorString="&amp;w" DetailColor="K" />
+    <part Name="Commerce" Value="20" />
+    <part Name="Physics" Weight="15" Organic="true" />
+    <part Name="Description" Short="Shards of flint are knapped to needle points and arranged like rows of blackened, gleaming teeth." />
+    <part Name="Cleo_TerraFirma_FlintSpikePauldrons" Damage="1d3" />
+    <xtagGrammar iArticle="a pair of" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
+    <tag Name="Tier" Value="2" />
+  </object>
+  <object Name="Cleo_TerraFirma_GaslightGauntlets" Inherits="BaseGauntlet">
+    <part Name="Armor" AV="1" DV="0" WornOn="Hands" />
+    <part Name="Render" DisplayName="gaslight gauntlets" RenderString="]" Tile="Items/sw_gloves_skintight.bmp" ColorString="&amp;g" DetailColor="W" />
+    <part Name="Commerce" Value="120" />
+    <part Name="Description" Short="Through bores in the knuckles draw short and tapered beams of pale light. In motion they heat to steel-melting temperature and whirr matter away." />
+    <part Name="Physics" Weight="3" />
+    <part Name="Metal" />
+    <part Name="Examiner" Alternate="UnknownGloves" Complexity="4" />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+    <part Name="AIOffensiveEnergyCellReload" />
+    <part Name="AIPassiveEnergyCellReload" />
+    <part Name="LightSource" OnlyIfCharged="true" Radius="4" />
+    <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true" />
+    <part Name="Cleo_TerraFirma_GaslightGauntlets" PunchCharge="100" CarveCharge="1000" />
+    <tag Name="Mods" Value="GauntletMods,CommonMods,ElectronicsMods" />
+    <tag Name="EquipSound" Value="sfx_equip_armor_metal_light" />
+    <tag Name="Tier" Value="4" />
+  </object>
+  <object Name="Cleo_TerraFirma_GaslightFist" Inherits="DefaultFist">
+    <part Name="Render" DisplayName="gaslight fist" Tile="Creatures/natural-weapon-fist.bmp" ColorString="&amp;g" DetailColor="W" />
+    <part Name="MeleeWeapon" MaxStrengthBonus="1000" BaseDamage="1d4" Skill="Cudgel" Stat="Strength" />
+    <part Name="Cleo_TerraFirma_GaslightFist" PenetrationBonus="5" />
+  </object>
+</objects>

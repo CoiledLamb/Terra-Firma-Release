@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<factions>
+
+  <faction
+    Name="Cleo_TerraFirma_Quarriers"
+    DisplayName="Quarriers' Guild"
+    Old="false"
+    Plural="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-200"
+    PositiveSound="Sounds/Reputation/sfx_reputation_cragmensch_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_cragmensch_negative"
+    HistoricalSignificance="1"
+    EmblemTile="stonecarver.png"
+    EmblemTileColor="y"
+    EmblemDetailColor="K"
+  >
+    <feeling About="*" Value="0" />
+    <feeling About="Snapjaws" Value="-50" />
+
+    <interests>
+      <interest Tags="desertcanyons" WillBuy="false" WillSell="true" />
+      <interest Tags="underground" WillBuy="false" WillSell="true" />
+      <interest Tags="ruins" WillBuy="true" WillSell="false" />
+    </interests>
+
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Cleo_TerraFirma_Quarriers" Attitude="50" />
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction Name="Birds">
+    <feeling About="Cleo_TerraFirma_Quarriers" Value="0" />
+  </faction>
+
+  <faction Name="Unshelled Reptiles">
+    <feeling About="Cleo_TerraFirma_Quarriers" Value="0" />
+  </faction>
+
+</factions>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<activatedabilities>
+	<ability Command="Cleo_TerraFirma_CommandCalcify">
+		<description>
+			<p>You calcify sturdy walls to form obstacles.</p>
+			<br />
+			<p>Walls are placed in a contiguous shape, beginning adjacent to you. Only empty spaces will form walls.</p>
+			<p>Creates <stat Name="WallNum" /> walls.</p>
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_calcify.png" Foreground="w" Detail="C" />
+	</ability>
+	<ability Command="Cleo_TerraFirma_CommandEarthenBarrage">
+		<description>
+			<p>When enabled, automatically retrieves stones from your reserves to use as thrown weapons.</p>
+			<br />
+			<p>Stones deal <stat Name="Damage" /> damage; penetration follows your Strength, up to <stat Name="PenetrationCap" /> PV</p>
+			<p>A new stone is sculpted every <stat Name="TurnsPerCharge" /> rounds, up to a reserve of <stat Name="MaxCharges" /></p>
+			<p>Thrown stones disappear after <stat Name="Lifetime" /> consecutive turns of not being held as a thrown weapon</p>
+			<br />
+			<p>While you have stones in reserve, they whorl about you and deflect physical projectiles (up to <stat Name="DeflectFull" />% at full reserve). Lasers and other energy attacks pass through.</p>
+		</description>
+		<UITile Tile="Abilities/abil_takestones_off.png" Foreground="w" Detail="r" />
+		<UITile Tile="Abilities/abil_takestones_on.png" Foreground="w" Detail="W" State="ToggleOn" />
+	</ability>
+	<ability Command="Cleo_TerraFirma_CommandAttuneStones">
+		<description>
+			<p>Attune your sculpted stones to a keening resonance, or still them again.</p>
+			<br />
+			<p>Resonant stones penetrate as vibro weapons.</p>
+			<p>While attuned, your gravel whorl deflects light-based projectiles instead of physical ones.</p>
+		</description>
+		<UITile Tile="Abilities/abil_attunestone.png" Foreground="C" Detail="c" />
+	</ability>
+	<ability Command="Cleo_TerraFirma_CommandStoneshaper">
+		<description>
+			<p>Carves an animate statue of the target creature from a target wall, inheriting its body plan and physique but not any mutations, skills, or equipment.</p>
+			<p>The statue guards you: nearby enemies must resist or direct their attacks at it.</p>
+			<p><switch Name="Duration"><case Value="until destroyed">The statue lasts until destroyed. Carving another releases it.</case><default>After <stat Name="Duration" />, the statue returns to lifeless stone, entombing anything it wore or carried.</default></switch></p>
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_stoneshaper.png" Foreground="w" Detail="C" />
+	</ability>
+	<ability Command="Cleo_TerraFirma_CommandGorgonsGaze">
+		<description>
+			<p>You transfix an opponent with your unblinking gaze and slowly turn them to stone.</p>
+			<br />
+			<p>Taking any action other than passing the turn will break your gaze.</p>
+			<p>Each round your target makes a Toughness save; failures stiffen them (held in place, -<stat Name="QuicknesLoss" /> Quickness), and successes shake off one stage of petrification. The save grows harder with each failure.</p>
+			<p>Targets that fail <stat Name="SavesToPetrify" /> saves are permanently turned to stone; <stat Name="BreakSuccesses" /> successes break the gaze entirely.</p>
+			<p>Targets that escape after <stat Name="MarkFails" /> or more failures are left partially petrified.</p>
+			<br />
+			<statline Name="Range" />
+			<statline Name="SaveDifficulty" DisplayName="Save difficulty" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_gorgonsgaze.png" Foreground="w" Detail="C" />
+	</ability>
+	<ability Command="Cleo_TerraFirma_CommandFissure">
+		<description>
+			<p>You send pulses through the earth, raising a ring of broken stone.</p>
+			<br />
+			<p>Creatures caught in its path are pushed outward and must make a Toughness save or be stunned.</p>
+			<statline Name="RingRadius" DisplayName="Ring radius" Unit="square" />
+			<statline Name="WaveDamage" DisplayName="Damage" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_fissure.png" Foreground="w" Detail="C" />
+	</ability>
+</activatedabilities>

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="Cleo_TerraFirma_Burrowing Urchin" Inherits="BaseUrchin">
+    <part Name="Render" DisplayName="burrowing urchin" ColorString="&amp;w" DetailColor="g" />
+    <part Name="Description" Short="A moss covered ball of spines tumbles across the earth, prying open crevices and bits of scrap to nest in the dank spaces within." />
+    <part Name="Brain" Wanders="true" Mobile="true" LivesOnWalls="true" WallWalker="true" MinKillRadius="1" MaxKillRadius="16" />
+    <stat Name="Hitpoints" Value="6" />
+    <stat Name="Level" Value="12" />
+    <mutation Name="Burrowing" Level="5" />
+    <inventoryobject Blueprint="Cleo_TerraFirma_Aculei" Number="1" />
+  </object>
+  <object Name="Cleo_TerraFirma_Rockhound" Inherits="BaseDog">
+    <part Name="Render" DisplayName="rockhound" Tile="rockhound.png" RenderString="d" ColorString="&amp;w" DetailColor="y" />
+    <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Dog Corpse" />
+    <stat Name="Level" Value="8" />
+    <stat Name="Hitpoints" Value="18" />
+    <stat Name="AV" Value="2" />
+    <part Name="Cleo_TerraFirma_RockSweeper" />
+    <inventoryobject Blueprint="BigDog_Bite" Number="1" />
+    <part Name="Description" Short="Nose to the ground, =pronouns.subjective= =verb:hunt:afterpronoun= for bits of spall amongst the desert scrub. As =pronouns.subjective= =verb:trot:afterpronoun=, the stones in =pronouns.possessive= stomach click and settle against each other." />
+    <tag Name="Role" Value="Brute" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="Cleo_TerraFirma_Snapjaw Miner" Inherits="Snapjaw">
+    <part Name="Render" DisplayName="snapjaw miner" Tile="snapjaw miner.png" ColorString="&amp;w" DetailColor="y" />
+    <stat Name="Hitpoints" Value="6" />
+    <inventoryobject Blueprint="Pickaxe" Number="1" />
+    <part Name="ConversationScript" ConversationID="Cleo_TerraFirma_SnapjawMiner" />
+    <tag Name="Role" Value="Minion" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="Cleo_TerraFirma_BaseBoarVessel" Inherits="BaseAnimal">
+    <part Name="Brain" Hostile="false" Factions="Swine-100,Prey-100" />
+    <part Name="Body" Anatomy="Cleo_TerraFirma_BoarVessel" />
+    <part Name="Render" DisplayName="boar vessel" Tile="boar vessel.png" RenderString="b" ColorString="&amp;w" DetailColor="B" />
+    <part Name="Description" Short="A depiction of the common sow, painted with the rough brush of clay, roots aimlessly in the dirt. Water sloshes gently in =pronouns.possessive= basin as =pronouns.subjective= =verb:amble:afterpronoun= along." />
+    <part Name="LiquidVolume" MaxVolume="64" Volume="64" StartVolume="1d33-1" InitialLiquid="water-800,salt-200" ManualSeal="true" />
+    <part Name="Cleo_TerraFirma_VesselTint" EmptyColor="k" />
+    <part Name="LiquidProducer" Liquid="salt" FillSelfOnly="true" VariableRate="500-5000" WorksOnWearer="false" WorksOnSelf="true" />
+    <stat Name="Level" Value="1" />
+    <stat Name="AV" Value="3" />
+    <stat Name="Hitpoints" Value="15" />
+    <tag Name="Species" Value="oddity" />
+    <tag Name="Gender" Value="neuterperson" />
+    <xtagTextFragments Skin="glaze" PoeticFeatures="artfulness,gentle stillness,childlike wonder" />
+    <tag Name="BleedLiquid" Value="water-900,salt-100" />
+    <tag Name="BleedColor" Value="&amp;B" />
+    <tag Name="BleedPrefix" Value="{{B|wet}}" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Cleo_TerraFirma_Vine Merchant" Inherits="Jilted Lover">
+    <part Name="Render" DisplayName="quarry provisioner" />
+    <part Name="Brain" Hostile="false" Wanders="false" Mobile="false" LivesOnWalls="true" Factions="Consortium-100,Cleo_TerraFirma_Quarriers-50" />
+    <removepart Name="JiltedLoverProperties" />
+    <removeinventoryobject Blueprint="Lovers_Thorns" />
+    <part Name="Corpse" CorpseChance="0" />
+    <stat Name="Hitpoints" Value="70" />
+    <stat Name="AV" Value="3" />
+    <stat Name="Intelligence" sValue="22" />
+    <stat Name="Ego" sValue="19" />
+    <part Name="ConversationScript" ConversationID="Cleo_TerraFirma_VineMerchant" />
+    <part Name="GenericInventoryRestocker" Table="Cleo_TerraFirma_VineMerchantWares" />
+    <part Name="Interesting" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="NoSleep" />
+    <tag Name="DynamicObjectsTable:DesertCanyon_Creatures" Value="*delete" />
+    <tag Name="DynamicObjectsTable:Flowerfields_Creatures" Value="*delete" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Cleo_TerraFirma_Cobble Baboon" Inherits="Baboon">
+    <part Name="Render" DisplayName="granite baboon" Tile="Creatures/sw_quartz_baboon.bmp" ColorString="&amp;y" DetailColor="r" />
+    <stat Name="Hitpoints" Value="18" />
+    <stat Name="Level" Value="6" />
+    <stat Name="Strength" Boost="2" />
+    <stat Name="AV" Value="2" />
+    <mutation Name="Cleo_TerraFirma_EarthenBarrage" Level="2" />
+    <part Name="Corpse" CorpseChance="15" CorpseBlueprint="Cleo_TerraFirma_Cobble Baboon Corpse" />
+    <part Name="Description" Short="Grit is caked onto =pronouns.possessive= hunched figure like a second skin. Periodically you catch the glint of a wayward stone rising from the earth into =pronouns.possessive= scheming hands." />
+  </object>
+  <object Name="Cleo_TerraFirma_Cobble Baboon Corpse" Inherits="Baboon Corpse">
+    <part Name="Render" DisplayName="granite baboon corpse" />
+    <part Name="Butcherable" OnSuccess="@Cleo_TerraFirma_Cobblefur Items" />
+    <tag Name="Tier" Value="2" />
+  </object>
+  <object Name="Cleo_TerraFirma_Stonecarver" Inherits="BaseHumanoid">
+    <part Name="Render" DisplayName="stonecarver" Tile="stonecarver.png" ColorString="&amp;y" DetailColor="K" />
+    <part Name="Brain" Factions="Cleo_TerraFirma_Quarriers-100" />
+    <tag Name="InventoryPopulationTable" Value="Cleo_TerraFirma_Quarrier Kit" />
+    <part Name="Description" Short="Chalk dust has worked so far into the creases of =pronouns.possessive= hands that the lines read like a map of somewhere quarried." />
+    <stat Name="Level" Value="10" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Cleo_TerraFirma_Overseer" Inherits="Cleo_TerraFirma_Stonecarver">
+    <builder Name="Cleo_TerraFirma_StonecarverLegendary" />
+    <part Name="ConversationScript" ConversationID="Cleo_TerraFirma_Overseer" />
+    <part Name="GivesRep" />
+  </object>
+  <object Name="Cleo_TerraFirma_Hewer" Inherits="Cleo_TerraFirma_Stonecarver">
+    <part Name="Render" DisplayName="quarry {{r|hewer}}" ColorString="&amp;r" />
+    <part Name="Description" Short="=pronouns.Possessive= eyes flit from wall to wall like a firefly under the Beetle Moon. It's impossible to tell whether =pronouns.subjective= =verb:are:afterpronoun= judging what weight the stone can bear or finding the weakest spot to strike." />
+    <mutation Name="Cleo_TerraFirma_Fissure" Level="4" />
+    <part Name="ConversationScript" ConversationID="Cleo_TerraFirma_Hewer" />
+    <tag Name="Role" Value="Brute" />
+    <tag Name="InventoryPopulationTable" Value="Cleo_TerraFirma_Hewer Kit" />
+    <inventoryobject Blueprint="Nanopneumatic Jackhammer" Chance="25" IntProperties="AlwaysEquipAsWeapon:1" />
+  </object>
+  <object Name="Cleo_TerraFirma_Mason" Inherits="Cleo_TerraFirma_Stonecarver">
+    <part Name="Render" DisplayName="quarry {{y|mason}}" ColorString="&amp;y" />
+    <part Name="Description" Short="The wrinkles in =pronouns.possessive= grit-caked hands hold the memories of countless forms: a humble glowpad, a hulking slumberling. All things are possible with the right application of force and pressure to a hunk of stone." />
+    <mutation Name="Cleo_TerraFirma_Stoneshaper" Level="4" />
+    <part Name="ConversationScript" ConversationID="Cleo_TerraFirma_Mason" />
+    <tag Name="Role" Value="Summoner" />
+    <tag Name="InventoryPopulationTable" Value="Cleo_TerraFirma_Mason Kit" />
+    <part Name="Cleo_TerraFirma_HasFigurinesPart" NumberOfFigurines="2-4" />
+  </object>
+  <object Name="Cleo_TerraFirma_Outrider" Inherits="Cleo_TerraFirma_Stonecarver">
+    <part Name="Render" DisplayName="quarry {{B|outrider}}" ColorString="&amp;B" />
+    <part Name="Description" Short="=pronouns.Possessive= eyes move uncertainly from your gait to your arms. What did you come to =pronouns.possessive= quarry for, traveler? A nearby stone rises from the earth in anticipation of your answer." />
+    <mutation Name="Cleo_TerraFirma_EarthenBarrage" Level="4" />
+    <part Name="ConversationScript" ConversationID="Cleo_TerraFirma_Outrider" />
+    <tag Name="Role" Value="Artillery" />
+    <tag Name="InventoryPopulationTable" Value="Cleo_TerraFirma_Outrider Kit" />
+    <part Name="Cleo_TerraFirma_OutriderPatrol" BeatRadius="12" BeatInner="3" BeatPoints="6" PauseTurns="3-8" ShiftTurns="400-600" BreakTurns="100-200" />
+  </object>
+  <object Name="Cleo_TerraFirma_Mole Hewer" Inherits="Cleo_TerraFirma_Hewer">
+    <part Name="Render" Tile="stonerat.png" />
+    <mutation Name="BurrowingClaws" Level="4" />
+  </object>
+  <object Name="Cleo_TerraFirma_Mole Mason" Inherits="Cleo_TerraFirma_Mason">
+    <part Name="Render" Tile="stonerat.png" />
+    <mutation Name="BurrowingClaws" Level="4" />
+  </object>
+  <object Name="Cleo_TerraFirma_Mole Outrider" Inherits="Cleo_TerraFirma_Outrider">
+    <part Name="Render" Tile="stonerat.png" />
+    <mutation Name="BurrowingClaws" Level="4" />
+  </object>
+  <object Name="Cleo_TerraFirma_AnimateFigurine" Inherits="BaseHumanoid">
+    <part Name="Render" DisplayName="animate figurine" Tile="Items/figurine.png" RenderString="*" ColorString="&amp;y" DetailColor="K" />
+    <part Name="Description" Short="" />
+    <builder Name="Cleo_TerraFirma_AnimateFigurineIdentity" Population="Cleo_TerraFirma_AnimateFigurineIdentity" />
+    <part Name="Brain" Hostile="False" Factions="Cleo_TerraFirma_Quarriers-100" />
+    <part Name="Swarmer" />
+    <part Name="MentalShield" />
+    <part Name="Corpse" CorpseChance="50" CorpseBlueprint="Cleo_TerraFirma_Random Stone Figurine" />
+    <stat Name="Level" Value="5" />
+    <stat Name="Hitpoints" Value="12" />
+    <stat Name="AV" Value="3" />
+    <stat Name="DV" Value="2" />
+    <stat Name="Strength" Value="14" />
+    <stat Name="Toughness" Value="12" />
+    <stat Name="Agility" Value="16" />
+    <tag Name="Role" Value="Minion" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Cleo_TerraFirma_BaseBoarVessel" Load="Merge">
+    <part Name="Corpse" CorpseChance="50" CorpseBlueprint="Cleo_TerraFirma_Boar Vessel Corpse" />
+    <removetag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="DynamicObjectsTable:DesertCanyon_Creatures" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:Hills_Creatures" />
+    <tag Name="DynamicObjectsTable:Flowerfields_Creatures" />
+  </object>
+  <object Name="Cleo_TerraFirma_Farm Boar Vessel" Inherits="Cleo_TerraFirma_BaseBoarVessel">
+    <part Name="Brain" Hostile="false" Factions="Prey-100" />
+    <tag Name="Grazer" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="Cleo_TerraFirma_Boar Vessel Corpse" Inherits="Corpse">
+    <part Name="Render" DisplayName="boar vessel corpse" TileColor="&amp;w" ColorString="&amp;w" DetailColor="B" />
+    <part Name="Description" Short="Shards of a shattered pictograph lie inert on the ground, where once they trotted under the salt sun." />
+    <part Name="Butcherable" OnSuccess="Cleo_TerraFirma_GutCistern" />
+    <part Name="Commerce" Value="4" />
+    <removepart Name="Food" />
+    <removetag Name="Meat" />
+    <intproperty Name="Bleeds" Value="0" />
+    <tag Name="Tier" Value="1" />
+  </object>
+</objects>

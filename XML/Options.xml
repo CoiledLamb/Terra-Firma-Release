@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<options>
+	<option ID="Cleo_TerraFirma_DebugLog"
+		DisplayText="Enable debug logging"
+		Category="Terra Firma" Type="Checkbox" Default="No">
+		<helptext>
+			Mod-specific mutations will output their logic to the message log. Useful for finding issues.
+		</helptext>
+	</option>
+	<option ID="Cleo_TerraFirma_TakeStonesDefaultOn"
+		DisplayText="Take Stones starts toggled on"
+		Category="Terra Firma" Type="Checkbox" Default="Yes">
+		<helptext>
+			Characters who gain Earthen Barrage begin with Take Stones already enabled, sculpting and equipping stones automatically. Does not change the toggle on existing characters.
+		</helptext>
+	</option>
+	<option ID="Cleo_TerraFirma_PoolGeomancy"
+		DisplayText="Geomancy in mutation pools"
+		Category="Terra Firma" Type="Checkbox" Default="Yes">
+		<helptext>
+			When disabled, Geomancy is removed from character creation and from new mutation draws. Characters who already have it are unaffected. Takes effect at the next new game or save load.
+		</helptext>
+	</option>
+	<option ID="Cleo_TerraFirma_PoolCalcify"
+		DisplayText="Calcify in mutation pools"
+		Category="Terra Firma" Type="Checkbox" Default="Yes">
+		<helptext>
+			When disabled, Calcify is removed from character creation and from new mutation draws. Characters who already have it are unaffected. Takes effect at the next new game or save load.
+		</helptext>
+	</option>
+	<option ID="Cleo_TerraFirma_PoolEarthenBarrage"
+		DisplayText="Earthen Barrage in mutation pools"
+		Category="Terra Firma" Type="Checkbox" Default="Yes">
+		<helptext>
+			When disabled, Earthen Barrage is removed from character creation and from new mutation draws. Characters who already have it are unaffected. Takes effect at the next new game or save load.
+		</helptext>
+	</option>
+	<option ID="Cleo_TerraFirma_PoolStoneshaper"
+		DisplayText="Stoneshaper in mutation pools"
+		Category="Terra Firma" Type="Checkbox" Default="Yes">
+		<helptext>
+			When disabled, Stoneshaper is removed from character creation and from new mutation draws. Characters who already have it are unaffected. Takes effect at the next new game or save load.
+		</helptext>
+	</option>
+	<option ID="Cleo_TerraFirma_PoolGorgonsGaze"
+		DisplayText="Gorgon's Gaze in mutation pools"
+		Category="Terra Firma" Type="Checkbox" Default="Yes">
+		<helptext>
+			When disabled, Gorgon's Gaze is removed from character creation and from new mutation draws. Characters who already have it are unaffected. Takes effect at the next new game or save load.
+		</helptext>
+	</option>
+	<option ID="Cleo_TerraFirma_PoolFissure"
+		DisplayText="Fissure in mutation pools"
+		Category="Terra Firma" Type="Checkbox" Default="Yes">
+		<helptext>
+			When disabled, Fissure is removed from character creation and from new mutation draws. Characters who already have it are unaffected. Takes effect at the next new game or save load.
+		</helptext>
+	</option>
+</options>

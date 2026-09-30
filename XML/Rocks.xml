@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object Name="Cleo_TerraFirma_Rock_Pebbles" Inherits="BaseStone">
+		<part Name="Render" DisplayName="pebbles" Tile="Items/sw_smallstone.bmp" ColorString="&amp;w" DetailColor="Y" />
+		<part Name="Description" Short="Smooth spall from the world's slow grinding, come down at last." />
+		<part Name="Physics" Weight="0" Category="Thrown Weapons" />
+		<part Name="Commerce" Value="1" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="Tier" Value="1" />
+		<tag Name="Gender" Value="plural" />
+		<tag Name="Cleo_TerraFirma_CrushDamage" Value="1" />
+	</object>
+
+	<object Name="Cleo_TerraFirma_Rock_Rubble" Inherits="Rubble">
+		<part Name="Render" DisplayName="rubble" ColorString="&amp;y" DetailColor="w" />
+		<stat Name="Hitpoints" Value="250" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="Cleo_TerraFirma_CrushDamage" Value="3d6" />
+	</object>
+
+	<object Name="Cleo_TerraFirma_Rock_CrumbledWall" Inherits="Rubble">
+		<part Name="Render" DisplayName="crumbled wall" ColorString="&amp;Y" DetailColor="y" />
+		<stat Name="Hitpoints" Value="400" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="Cleo_TerraFirma_CrushDamage" Value="5d6" />
+	</object>
+
+	<object Name="Cleo_TerraFirma_Rock_Wall" Inherits="Sandstone">
+		<part Name="Render" DisplayName="fallen wall" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="Cleo_TerraFirma_CrushDamage" Value="8d8" />
+		<tag Name="Cleo_TerraFirma_CrushInstakill" Value="15" />
+		<tag Name="PaintWith" Value="*" />
+		<tag Name="PaintPart" Value="Cleo_TerraFirma_StoneshaperWallProperties" />
+	</object>
+
+	<object Name="Cleo_TerraFirma_Rock_Generic" Inherits="SmallBoulder">
+		<tag Name="ExcludeFromDynamicEncounters" />
+	</object>
+</objects>

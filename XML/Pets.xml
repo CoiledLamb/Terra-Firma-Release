@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="Cleo_TerraFirma_BoarVessel" Inherits="Cleo_TerraFirma_BaseBoarVessel">
+    <part Name="Brain" Passive="true" />
+    <part Name="Render" DisplayName="Husangeion" />
+    <part Name="Description" Short="A roughly shaped piece of earth meant to resemble the common sow, mud still wet after decades of drying. Though the hands of whoever first worked this are unknown, their living record remains in this constant companion."></part>
+    <part Name="LiquidVolume" MaxVolume="64" Volume="64" StartVolume="1d33-1" InitialLiquid="water-1000" ManualSeal="true" />
+    <part Name="LiquidProducer" Liquid="water" VariableRate="200-2000" WorksOnWearer="false" WorksOnSelf="true" />
+    <part Name="Corpse" CorpseChance="0" />
+    <stat Name="Level" Value="1"></stat>
+    <stat Name="AV" Value="5"></stat>
+    <stat Name="Hitpoints" Value="100"></stat>
+    <tag Name="PetResponse" Value="sloshes excitedly,whines and clinks,rolls over - it might not be able to get up..." />
+    <part Name="Pettable" />
+    <tag Name="Pet"/>
+    <tag Name="StartingPet"/>
+    <xtagGrammar Proper="true"></xtagGrammar>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="NoCombat"></tag>
+  </object>
+</objects>
