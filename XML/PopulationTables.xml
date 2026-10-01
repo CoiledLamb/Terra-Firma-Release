@@ -234,6 +234,7 @@
       <object Weight="300" Blueprint="Nylon Bodypack" Number="1" />
       <object Weight="100" Blueprint="Cleo_TerraFirma_SeismicShufflers" Number="1" />
       <object Weight="100" Blueprint="Cleo_TerraFirma_GaslightGauntlets" Number="1" />
+      <object Weight="100" Blueprint="Cleo_TerraFirma_SpallSandals" Number="1" />
     </group>
   </population>
   <population Name="BaboonParty" Load="Merge">
@@ -343,6 +344,7 @@
     <group Name="Items" Style="pickone">
       <object Weight="20" Number="1" Blueprint="Cleo_TerraFirma_MudskinGirdle" />
       <object Weight="20" Number="1" Blueprint="Cleo_TerraFirma_FlintSpikePauldrons" />
+      <object Weight="20" Number="1" Blueprint="Cleo_TerraFirma_SpallSandals" />
     </group>
   </population>
   <population Name="Armor 4R" Load="Merge">
@@ -445,6 +447,7 @@
       <object Weight="4" Blueprint="Hammered Dulcimer" />
       <object Weight="2" Blueprint="Random Stone Statue" />
       <object Weight="2" Blueprint="Cleo_TerraFirma_FireDish" />
+      <object Weight="2" Blueprint="Cleo_TerraFirma_StonehandsBanner" />
     </group>
   </population>
   <population Name="Cleo_TerraFirma_WarrenDress WorkScatter">

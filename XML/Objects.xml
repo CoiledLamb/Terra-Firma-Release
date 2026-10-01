@@ -32,6 +32,7 @@
     <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_rockCreature_vo_idle" />
     <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_rockCreature_vo_attack" />
     <part Name="RandomStatue" StatueType="sculpture" />
+    <part Name="Cleo_TerraFirma_UndesecratePart" />
   </object>
   <object Name="Cleo_TerraFirma_StoneshaperStatueNaturalWeapon" Inherits="NaturalWeapon">
     <part Name="Render" DisplayName="{{y|gravelly haymaker}}" Tile="Creatures/natural-weapon-fist.bmp" ColorString="&amp;K" />
@@ -291,5 +292,47 @@
     <xtagreader Mutation="Cleo_TerraFirma_Geomancy" Level="4" />
     <xtagreeve Ego="2" Willpower="2" />
     <xtagscribe Intelligence="2" Willpower="2" />
+  </object>
+  <object Name="Cleo_TerraFirma_SeismicShufflers" Inherits="BaseBoot">
+    <part Name="Render" DisplayName="seismic shufflers" Tile="Items/sw_boots_tech.bmp" ColorString="&amp;y" DetailColor="C" />
+    <part Name="Armor" WornOn="Feet" AV="1" DV="0" />
+    <part Name="Physics" Weight="7" />
+    <part Name="Commerce" Value="50" />
+    <part Name="Description" Short="When connected with the earth, a spark of energy traces fault lines and plate connections. The other step completes the circuit, relaying that information back to the body. A holographic driver is activated with a tap of the heel, revealing caverns unseen to the naked eye." />
+    <part Name="RulesDescription" Text="Each step maps a 3x3 area one stratum below you. You may activate this item to briefly project holograms of nearby walls on that stratum." />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+    <part Name="AIDefensiveEnergyCellReload" />
+    <part Name="AIPassiveEnergyCellReload" />
+    <part Name="Cleo_TerraFirma_SeismicShufflers" PreviewDuration="2" PassiveRadius="1" ChargeUse="1" PeekChargeUse="100" RiseSeconds="0.25" RiseStaggerMs="250" RisePixels="8" PeekTile="Abilities/seismic peek.png" PeekColor="&amp;C" PeekDetailColor="y" />
+    <tag Name="Tier" Value="3" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Cleo_TerraFirma_SpallSandals" Inherits="Sandals">
+    <part Name="Render" DisplayName="spallskirter's sandals" ColorString="&amp;w" DetailColor="y" />
+    <part Name="Commerce" Value="15" />
+    <part Name="Physics" Weight="2" />
+    <part Name="Description" Short="Brinestalk is woven along tectonic lines to find the geodesic path." />
+    <part Name="Cleo_TerraFirma_SpallSandals" MS="10" StoneOnly="true" />
+    <tag Name="Tier" Value="2" />
+    <stag Name="Movement" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Cleo_TerraFirma_StonehandsBanner" Inherits="Furniture">
+    <part Name="Render" DisplayName="banner of the {{w|sundered mountain}}" Tile="stonehandsbanner.png" RenderString="]" ColorString="&amp;w" DetailColor="y" />
+    <part Name="Physics" Weight="40" Takeable="false" Solid="false" Organic="true" />
+    <part Name="Description" Short="Earth-brown textiles evoke an image of a great mountain, split in two." />
+    <part Name="Banner" Faction="Cleo_TerraFirma_Quarriers" Effect="Cleo_TerraFirma_StonehandsBannerEffect" Description="Bestows the {{w|rooted}} effect to members of the Quarriers' Guild who can see this item." />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="Cleo_TerraFirma_SeismicProjection" Inherits="Item">
+    <part Name="Render" DisplayName="holographic wall" RenderString="219" RenderLayer="6" ColorString="&amp;C" DetailColor="c" Occluding="false" RenderIfDark="true" />
+    <part Name="Physics" Weight="0" Takeable="false" Solid="false" />
+    <part Name="Description" Short="A temporary projection of a wall one stratum below." />
+    <part Name="HologramMaterial" />
+    <part Name="Cleo_TerraFirma_SeismicArrival" />
+    <part Name="HologramInvulnerability" />
+    <part Name="Temporary" Duration="2" />
+    <tag Name="IgnoresGravity" />
+    <tag Name="ExcludeFromDynamicEncounters" />
   </object>
 </objects>

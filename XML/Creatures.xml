@@ -94,6 +94,7 @@
     <builder Name="Cleo_TerraFirma_StonecarverLegendary" />
     <part Name="ConversationScript" ConversationID="Cleo_TerraFirma_Overseer" />
     <part Name="GivesRep" />
+    <part Name="Description" Short="You can see the responsibility =pronouns.subjective= =verb:carry:afterpronoun= in the creases around =pronouns.possessive= eyes, and in =pronouns.possessive= palms. =pronouns.Possessive= work has made a mark on =pronouns.objective=, as =pronouns.subjective= =verb:have:afterpronoun= on it." />
   </object>
   <object Name="Cleo_TerraFirma_Hewer" Inherits="Cleo_TerraFirma_Stonecarver">
     <part Name="Render" DisplayName="quarry {{r|hewer}}" ColorString="&amp;r" />

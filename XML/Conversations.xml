@@ -30,7 +30,9 @@
     <node ID="Start">
       <text>
 				Mind the cairns, wayfarer, lest you knock one over.~
-				Seen a few baboons today. Not one made it further than a stone's throw.
+				Seen a few baboons today. Not one made it further than a stone's throw.~
+				The nonsense birds? Don't talk to them, they won't talk to you.~
+				Can hear you coming from a mile away, wayfarer. I'll be hearing you go, too.
 			</text>
       <choice GotoID="End">Rust and earth.</choice>
     </node>
@@ -50,7 +52,9 @@
     <node ID="Start">
       <text>
 				Smashed through a wall last week, soaked my clothes. Damn aquifers.~
-				Overseer said we needed to square away more rock, but my back's been killing me... got any witchwood?
+				Overseer said we needed to square away more rock, but my back's been killing me... got any witchwood?~
+				Grounds' not so steady here, wayfarer. I'd watch my step, if're you.~
+				Ever scraped the moss off one of these here walls? Tastes like grit, but sure fills ya' up.
 			</text>
       <choice GotoID="End">Rust and earth.</choice>
     </node>
